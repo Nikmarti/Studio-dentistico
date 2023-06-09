@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="475.0" prefWidth="742.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stden.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Pane prefHeight="540.0" prefWidth="702.0">
+        <children>
+            <Button layoutX="130.0" layoutY="85.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="NOME" textFill="#0536cc" />
+            <Button layoutX="130.0" layoutY="137.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="COGNOME" textFill="#dc0000" />
+            <Button layoutX="125.0" layoutY="249.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="PROBLEMA" textFill="#8c5757" />
+            <TextField fx:id="Cognome" layoutX="400.0" layoutY="131.0" prefHeight="34.0" prefWidth="149.0" />
+            <TextField fx:id="CF" layoutX="400.0" layoutY="191.0" prefHeight="40.0" prefWidth="149.0" />
+            <TextField fx:id="Problema" layoutX="400.0" layoutY="249.0" prefHeight="34.0" prefWidth="149.0" />
+            <Button layoutX="602.0" layoutY="374.0" mnemonicParsing="false" onAction="#TastoInvio" text="INVIA" textFill="#d4a713" />
+            <MenuBar fx:id="menu" layoutY="1.0" prefHeight="26.0" prefWidth="100.0">
+                <menus>
+                    <Menu mnemonicParsing="false" text="Lista Pazienti">
+                        <items>
+                            <MenuItem mnemonicParsing="false" onAction="#Lista" text="Lista" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <Label layoutX="289.0" layoutY="27.0" prefHeight="40.0" prefWidth="313.0" text="REGISTRAZIONE DEL PAZIENTE">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Label>
+            <Button layoutX="130.0" layoutY="194.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="76.0" text="CF" textFill="#bf15b3" />
+            <TextField fx:id="TEL" layoutX="400.0" layoutY="304.0" prefHeight="34.0" prefWidth="149.0" />
+            <Button layoutX="125.0" layoutY="304.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="TEL" textFill="#88991a" />
+            <TextField fx:id="Nome" layoutX="400.0" layoutY="85.0" prefHeight="34.0" prefWidth="149.0" />
+            <Label fx:id="stampa" layoutX="27.0" layoutY="378.0" prefHeight="61.0" prefWidth="222.0" />
+        </children>
+    </Pane>
+</VBox>

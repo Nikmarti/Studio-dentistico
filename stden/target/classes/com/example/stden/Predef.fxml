@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="475.0" prefWidth="742.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stden.HelloController">
+    <children>
+        <Pane prefHeight="473.0" prefWidth="742.0" style="-fx-background-color: #B2EBF2;">
+            <children>
+                <MenuBar fx:id="menu" layoutX="-8.0" layoutY="1.0" style="-fx-background-color: #B2EBF2;">
+                    <menus>
+                        <Menu mnemonicParsing="false" style="-fx-background-color: #B2EBF2;" text="REGISTRAZIONE">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#Registra" text="REGISTRAZIONE" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <Button layoutX="135.0" layoutY="72.0" mnemonicParsing="false" prefHeight="272.0" prefWidth="494.0" text="STUDIO DENTISTICO" textFill="#c10909" textOverrun="WORD_ELLIPSIS" style="-fx-font-family: Arial;" />
+            </children>
+        </Pane>
+    </children>
+</VBox>

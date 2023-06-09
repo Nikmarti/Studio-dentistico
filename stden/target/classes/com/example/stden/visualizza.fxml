@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="475.0" prefWidth="742.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stden.HelloController">
+    <children>
+        <Pane prefHeight="475.0" prefWidth="635.0" style="-fx-background-color: #B2EBF2;">
+            <children>
+                <MenuBar fx:id="menu" layoutY="2.0" style="-fx-background-color: #B2EBF2;">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="REGISTRAZIONE">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#Registra" text="REGISTRAZIONE" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ListView fx:id="pazientiListView" layoutX="54.0" layoutY="38.0" prefHeight="399.0" prefWidth="634.0" style="-fx-control-inner-background: #FFFFFF; -fx-background-color: #FFFFFF;" />
+                <Button layoutX="660.0" layoutY="437.0" mnemonicParsing="false" onAction="#Cancella" style="-fx-background-color: #8CF08C; -fx-text-fill: #FF0000;" text="TURNO" />
+            </children>
+        </Pane>
+    </children>
+</VBox>
+
+
+
+
+
+
+
+
+
+
+
+
